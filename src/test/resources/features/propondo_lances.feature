@@ -18,9 +18,15 @@ Funcionalidade: Propondo lances ao leilao
     Quando propoe ao leilao
     Entao o lance nao eh aceitoExemplos:
     Exemplos:
-      | valor | valor |
-      | 0 |beltrano|
-      | -1 |cicrano |
+      | valor | nomeUsuario |
+      | 0     | beltrano    |
+      | -1    | cicrano     |
 
-
+  Cenario: Propondo uma sequencia de lances
+    Dado dois lances
+      | valor | nomeUsuario |
+      | 10    | cicrano    |
+      | 15    | cicrano     |
+    Quando propoe varios lances ao leilao
+    Entao e o segundo lance nao eh aceito
 
